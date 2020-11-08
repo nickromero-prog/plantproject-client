@@ -9,6 +9,7 @@ const signUpSuccess = function (response) {
 
 const signUpFailure = function () {
   $('#message').text('Sign up unsuccesful, try again')
+  $('#sign-up-form').trigger('reset')
 }
 
 const signInSuccess = function (response) { // response is the response from the api
