@@ -7,8 +7,8 @@ const ui = require('./ui')
 const onSignUp = function (event) {
   event.preventDefault() // event=submit, so preventDefault the submit action
   const form = event.target
-  const data = getFormFields(form)// <---getFormFields(event.target) building the object
-  api.signUp(data)// <---the ajax request to create object into
+  const data = getFormFields(form)// <---storing the input from the form in a variable
+  api.signUp(data)// <---the ajax request to the api with the data from the user
     .then(ui.signUpSuccess)
     .catch(ui.signUpFailure)
 }
