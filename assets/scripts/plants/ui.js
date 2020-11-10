@@ -42,11 +42,23 @@ const deletePlantFailure = function (res) {
   $('#delete-plant-form').trigger('reset')
 }
 
+const updatePlantSuccess = function (res) {
+  $('#message').text('You updated the plant')
+  $('#update-plant-form').trigger('reset')
+}
+
+const updatePlantFailure = function (res) {
+  $('#message').text('Woops try again')
+  $('#update-plant-form').trigger('reset')
+}
+
 module.exports = {
   createPlantSuccess,
   createPlantFailure,
   getPlantsSuccess,
   getPlantsFailure,
   deletePlantSuccess,
-  deletePlantFailure
+  deletePlantFailure,
+  updatePlantSuccess,
+  updatePlantFailure
 }

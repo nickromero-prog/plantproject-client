@@ -102,14 +102,32 @@
         <fieldset>
           <legend>Delete a Plant</legend>
               <label for="plant-id">Plant ID</label>
-                <input id="plant-id" type="number" name="ID">
+                <input id="plant-id" type="text" name="ID">
 
-                    <input id="deletebutton" type="submit" value="Delete">
+                    <input id="deleteplantbutton" type="submit" value="Delete">
         </fieldset>
       </form>
 
+      <form id="update-plant-form">
 
+          <fieldset>
+            <legend>Change Plant</legend>
 
+            <label for="update-plant-id">Plant ID</label>
+              <input id="update-plant-id" type="text" name="ID">
+
+              <label for="name-update">New Plant Name</label>
+                <input id="name-update" name="plant[name]" type="text">
+
+                  <label for="light-update">New Light</label>
+                    <input id="light-update" name="plant[light]" type="text">
+
+                    <label for="water-update">New Water</label>
+                      <input id="water-update" name="plant[water]" type="text">
+
+                      <input type="submit" id="updateplantbutton" value="Update Plant">
+        </fieldset>
+      </form>
 
 
     </body>

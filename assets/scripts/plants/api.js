@@ -27,16 +27,29 @@ const getPlants = function (data) {
 
 const deletePlant = function (data) {
   return $.ajax({
-    url: config.apiUrl + '/plants',
+    url: config.apiUrl + '/plants/' + data.ID,
     headers: {
       Authorization: 'Bearer ' + store.user.token
     },
-    method: 'DELETE',
+    method: 'DELETE'
+  })
+}
+
+const updatePlant = function (data) {
+  console.log(data)
+  store.plant = data.plant
+  return $.ajax({
+    url: config.apiUrl + '/plants/' + data.ID,
+    headers: {
+      Authorization: 'Bearer ' + store.user.token
+    },
+    method: 'PATCH',
     data: data
   })
 }
 module.exports = {
   createPlant,
   getPlants,
-  deletePlant
+  deletePlant,
+  updatePlant
 }

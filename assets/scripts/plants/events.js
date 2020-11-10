@@ -31,8 +31,18 @@ const onDeletePlant = function (event) {
     .catch(ui.deletePlantFailure)
 }
 
+const onUpdatePlant = function (event) {
+  event.preventDefault()
+  const form = event.target
+  const data = getFormFields(form)
+  api.updatePlant(data)
+    .then(ui.updatePlantSuccess)
+    .catch(ui.updatePlantFailure)
+}
+
 module.exports = {
   onCreatePlant,
   onGetPlants,
-  onDeletePlant
+  onDeletePlant,
+  onUpdatePlant
 }
