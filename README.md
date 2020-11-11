@@ -5,6 +5,13 @@ Wireframe Link: https://imgur.com/gallery/Kf8rhW2
 
 ERD Link: https://imgur.com/gallery/IRbdmBm
 
+API Link: https://damp-journey-96295.herokuapp.com
+
+Before I could do anything, I had to build an API using mongoDB, mongoose, and
+Javascript in order for the app to store and receive data. This allows the user
+to keep the information they are storing on the application and can retrieve it
+at a later date event from a different client.
+
 
 First thing I wanted to do was setup the basic authentication process for users to
 have the ability to sign-up, sign-in, sign-out, and change their password.
@@ -50,4 +57,11 @@ that they have no need for anymore and can delete that plant from their account.
 
 As a user, I want to be able to change the plants I have logged if I find out
 that a certain plant needs different amounts of light or water. Or if I want to
-start calling the plant by the nickname I have given it. 
+start calling the plant by the nickname I have given it.
+
+
+Unsolved Problems:
+1) I would like to remove the interactions between deleting
+and updating plants. I want to add buttons that allow the user to do those simple tasks separately.
+
+2) I would like for the user to be able to add a picture of the plant.

@@ -15,6 +15,7 @@ h1 {
   font-family: 'Bungee Shade', cursive;
   font-size: 65px;
   color: #403527;
+  background-clip: border-box;
 }
 
 .form {
@@ -22,13 +23,13 @@ h1 {
   align-items: stretch;
   justify-content: center;
 }
-
-#sign-up-form {
-  margin: 20px 0px 0px 0px;
-}
-
 #sign-in-form {
-  margin: 10px;
+  margin-left: 40px;
+}
+#signinandup {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 #sign-out-form {
@@ -39,7 +40,8 @@ h1 {
   margin: 0px 0px 0px 20px;
 }
 
-legend {
+#createplantbutton {
+  margin: 0px 0px 0px 20px;
 }
 
 #update-plant-form  {
@@ -55,6 +57,17 @@ input {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+#createandgetplants {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px 0px 0px 0px;
+}
+
+#get-plants-form {
+  margin: 0px 0px 0px 95px;
 }
 
 #changeanddeleteplant {

@@ -43,12 +43,16 @@ const changePasswordFailure = function () {
 }
 
 const signOutSuccess = function (response) {
-  $('#message').text('You are signed out! See you later!')
+  $('#message').text('You are signed out! See you later propagator!')
   store.user = null // reset the user to nothing and erase token
   $('#sign-up-form').show()
   $('#sign-in-form').show()
   $('#sign-out-form').hide()
   $('#change-password-form').hide()
+  $('#create-plant-form').hide()
+  $('#get-plants-form').hide()
+  $('#update-plant-form').hide()
+  $('#delete-plant-form').hide()
 }
 
 const signOutFailure = function () {
