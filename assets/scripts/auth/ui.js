@@ -25,8 +25,6 @@ const signInSuccess = function (response) { // response is the response from the
   $('#sign-in-form').trigger('reset')
   $('#create-plant-form').show()
   $('#get-plants-form').show()
-  $('#delete-plant-form').show()
-  $('#update-plant-form').show()
 }
 
 const signInFailure = function () {

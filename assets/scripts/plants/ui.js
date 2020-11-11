@@ -15,13 +15,15 @@ const createPlantFailure = function (res) {
 const getPlantsSuccess = function (res) {
   const plants = res.plants
   $('#message').text('Your plants are ')
+  $('#delete-plant-form').show()
+  $('#update-plant-form').show()
 
   plants.forEach(function (currentPlant) {
     const plantsHTML = (`
-      <p>ID: ${currentPlant._id}</p>
-      <p>name: ${currentPlant.name}</p>
-      <p>light: ${currentPlant.light}</p>
-      <p>water: ${currentPlant.water}</p>
+      <p style="text-align:center;">ID: ${currentPlant._id}</p>
+      <p style="text-align:center;">name: ${currentPlant.name}</p>
+      <p style="text-align:center;">light: ${currentPlant.light}</p>
+      <p style="text-align:center;">water: ${currentPlant.water}</p>
       <br>
       `)
     $('#message').append(plantsHTML)
