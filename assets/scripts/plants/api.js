@@ -36,8 +36,6 @@ const deletePlant = function (data) {
 }
 
 const updatePlant = function (data) {
-  console.log(data)
-  store.plant = data.plant
   return $.ajax({
     url: config.apiUrl + '/plants/' + data.ID,
     headers: {

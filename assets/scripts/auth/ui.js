@@ -23,6 +23,10 @@ const signInSuccess = function (response) { // response is the response from the
   $('#sign-in-email').text('')
   $('#sign-in-password').text('')
   $('#sign-in-form').trigger('reset')
+  $('#create-plant-form').show()
+  $('#get-plants-form').show()
+  $('#delete-plant-form').show()
+  $('#update-plant-form').show()
 }
 
 const signInFailure = function () {

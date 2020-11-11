@@ -18,4 +18,8 @@ $(() => {
   $('#get-plants-form').on('submit', plantEvents.onGetPlants)
   $('#delete-plant-form').on('submit', plantEvents.onDeletePlant)
   $('#update-plant-form').on('submit', plantEvents.onUpdatePlant)
+  $('#create-plant-form').hide()
+  $('#get-plants-form').hide()
+  $('#delete-plant-form').hide()
+  $('#update-plant-form').hide()
 })
