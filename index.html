@@ -17,7 +17,7 @@
     <body>
       <h1>Plant Workshop</h1>
 
-      <form id='sign-up-form'>
+      <form class="form" id='sign-up-form'>
         <fieldset>
           <legend>Sign Up</legend>
 
@@ -36,7 +36,7 @@
       </form>
 
 
-      <form id='sign-in-form'>
+      <form class="form" id='sign-in-form'>
 
         <fieldset>
           <legend>Sign In</legend>
@@ -53,7 +53,8 @@
       </form>
 
 
-      <form id="change-password-form">
+<div id="pformandsignout">
+      <form class="form" id="change-password-form">
 
           <fieldset>
             <legend>Change Password</legend>
@@ -68,14 +69,16 @@
         </fieldset>
       </form>
 
-      <form id="sign-out-form">
+      <form class="form" id="sign-out-form">
           <fieldset>
             <legend>Sign Out</legend>
               <input type="submit" id="signoutbutton" value="Sign Out">
           </fieldset>
       </form>
 
-      <form id='create-plant-form'>
+</div>
+
+      <form class="form" id='create-plant-form'>
         <fieldset>
           <legend>Create a Plant</legend>
 
@@ -93,14 +96,14 @@
         </fieldset>
 
       </form>
-      <form id='get-plants-form'>
+      <form class="form" id='get-plants-form'>
         <fieldset>
           <legend>See Your Plants</legend>
             <input id="getplantsbutton" type="submit" value="See My Plants">
         </fieldset>
       </form>
-
-      <form id='delete-plant-form'>
+<div id="changeanddeleteplant">
+      <form class="form" id='delete-plant-form'>
         <fieldset>
           <legend>Delete a Plant</legend>
               <label for="plant-id">Plant ID</label>
@@ -110,7 +113,7 @@
         </fieldset>
       </form>
 
-      <form id="update-plant-form">
+      <form class="form" id="update-plant-form">
 
           <fieldset>
             <legend>Change Plant</legend>
@@ -130,7 +133,8 @@
                       <input type="submit" id="updateplantbutton" value="Update Plant">
         </fieldset>
       </form>
-<p id="message" style="text-align:center;"></p>
+</div>
+        <p id="message"></p>
 
     </body>
 </html>

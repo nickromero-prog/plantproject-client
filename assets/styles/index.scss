@@ -1,6 +1,5 @@
 @import '~bootstrap/scss/bootstrap';
 
-
 body {
   background-image: linear-gradient( #89A621, #D5D977);
   background-repeat: no-repeat;
@@ -14,10 +13,59 @@ h1 {
   color: #172601;
   text-align: center;
   font-family: 'Bungee Shade', cursive;
+  font-size: 65px;
+  color: #403527;
+}
+
+.form {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+#sign-up-form {
+  margin: 20px 0px 0px 0px;
+}
+
+#sign-in-form {
+  margin: 10px;
+}
+
+#sign-out-form {
+  margin: 0px 0px 0px 65px;
+}
+
+#changepasswordbutton {
+  margin: 0px 0px 0px 20px;
+}
+
+legend {
+}
+
+#update-plant-form  {
+  margin: 0px 0px 0px 20px;
 }
 
 input {
   outline: none;
-  border-radius: 25px;
+  border-radius: 5px;
   background-color: #F2CBBD;
+}
+#pformandsignout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#changeanddeleteplant {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#message {
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: bold;
+  margin: 25px;
+
 }

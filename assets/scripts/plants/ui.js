@@ -20,6 +20,7 @@ const getPlantsSuccess = function (res) {
 
   plants.forEach(function (currentPlant) {
     const plantsHTML = (`
+      <br>
       <p style="text-align:center;">ID: ${currentPlant._id}</p>
       <p style="text-align:center;">name: ${currentPlant.name}</p>
       <p style="text-align:center;">light: ${currentPlant.light}</p>
