@@ -7,6 +7,14 @@ ERD Link: https://imgur.com/gallery/IRbdmBm
 
 API Link: https://damp-journey-96295.herokuapp.com
 
+Front End Deployment Link: https://nickromero-prog.github.io/plantproject-client/
+
+Client-Garden Shed Repository on Github: https://github.com/nickromero-prog/plantproject-client
+
+API Github Repository: https://github.com/nickromero-prog/plantproject-api
+
+
+
 Before I could do anything, I had to build an API using mongoDB, mongoose, and
 Javascript in order for the app to store and receive data. This allows the user
 to keep the information they are storing on the application and can retrieve it
