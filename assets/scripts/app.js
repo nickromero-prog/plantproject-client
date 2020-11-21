@@ -4,6 +4,7 @@
 // const example = require('./example')
 const events = require('./auth/events')
 const plantEvents = require('./plants/events')
+const potEvents = require('./pots/events')
 // use require without a reference to ensure a file is bundled
 // require('./example')
 
@@ -22,4 +23,12 @@ $(() => {
   $('#get-plants-form').hide()
   $('#delete-plant-form').hide()
   $('#update-plant-form').hide()
+  $('#create-pot-form').on('submit', potEvents.onCreatePot)
+  $('#get-pots-form').on('submit', potEvents.onGetPots)
+  $('#delete-pot-form').on('submit', potEvents.onDeletePot)
+  $('#update-pot-form').on('submit', potEvents.onUpdatePot)
+  $('#create-pot-form').hide()
+  $('#get-pots-form').hide()
+  $('#delete-pot-form').hide()
+  $('#update-pot-form').hide()
 })

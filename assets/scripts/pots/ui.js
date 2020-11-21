@@ -1,6 +1,6 @@
 'use strict'
 
-const store = require('./../store')
+// const store = require('./../store')
 
 const createPotSuccess = function (response) {
   $('#message').text('You created a pot')
