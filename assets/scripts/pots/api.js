@@ -37,7 +37,7 @@ const deletePot = function (data) {
 
 const updatePot = function (data) {
   return $.ajax({
-    url: config.apiUrl + '/pots/' + data.Id,
+    url: config.apiUrl + '/pots/' + data.ID,
     headers: {
       Authorization: 'Bearer ' + store.user.token
     },
