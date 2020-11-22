@@ -137,6 +137,57 @@
         </fieldset>
       </form>
 </div>
+<div id='createandgetpots'>
+<form class="form" id='create-pot-form'>
+  <fieldset>
+    <legend>Create a Pot</legend>
+
+      <label for="create-pot-color">Color</label>
+        <input id="create-pot-color" type="text" name="pot[color]">
+
+        <label for="create-pot-size">Size</label>
+          <input id="create-pot-size" type="text" name="pot[size]">
+
+              <input id="createpotbutton" type="submit" value="Create Pot">
+  </fieldset>
+</form>
+
+<form class="form" id='get-pots-form'>
+  <fieldset>
+    <legend>See Your Pots</legend>
+      <input id="getpotsbutton" type="submit" value="See My Pots">
+  </fieldset>
+</form>
+</div>
+<div id='deleteandupdatepots'>
+<form class="form" id='delete-pot-form'>
+  <fieldset>
+    <legend>Delete a Pot</legend>
+        <label for="plant-id">Pot ID</label>
+          <input id="pot-id" type="text" name="ID">
+              <input id="deletepotbutton" type="submit" value="Delete Pot">
+  </fieldset>
+</form>
+
+<form class="form" id="update-pot-form">
+
+    <fieldset>
+      <legend>Alter Pot</legend>
+
+      <label for="update-pot-id">Plant ID</label>
+        <input id="update-pot-id" type="text" name="ID">
+
+        <label for="color-update">New Pot Color</label>
+          <input id="color-update" name="pot[color]" type="text">
+
+            <label for="size-update">New Size</label>
+              <input id="size-update" name="pot[size]" type="text">
+
+                <input type="submit" id="updatepotbutton" value="Update Pot">
+  </fieldset>
+</form>
+</div>
+
         <p id="message"></p>
 
     </body>

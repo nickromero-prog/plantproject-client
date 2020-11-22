@@ -14,9 +14,11 @@ const createPlantFailure = function (res) {
 
 const getPlantsSuccess = function (res) {
   const plants = res.plants
-  $('#message').text('Garden Shed')
+  $('#message').text('Garden Shed: Plants')
   $('#delete-plant-form').show()
   $('#update-plant-form').show()
+  $('#delete-pot-form').hide()
+  $('#update-pot-form').hide()
 
   plants.forEach(function (currentPlant) {
     const plantsHTML = (`

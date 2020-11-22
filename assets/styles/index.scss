@@ -44,7 +44,15 @@ h1 {
   margin: 0px 0px 0px 20px;
 }
 
+#createpotbutton {
+  margin: 0px 0px 0px 20px;
+}
+
 #update-plant-form  {
+  margin: 0px 0px 0px 20px;
+}
+
+#update-pot-form  {
   margin: 0px 0px 0px 20px;
 }
 
@@ -66,11 +74,26 @@ input {
   margin: 20px 0px 0px 0px;
 }
 
+#createandgetpots {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px 0px 0px 0px;
+}
+
 #get-plants-form {
   margin: 0px 0px 0px 95px;
 }
-
+#get-pots-form {
+  margin: 0px 0px 0px 95px;
+}
 #changeanddeleteplant {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#deleteandupdatepots {
   display: flex;
   flex-direction: row;
   justify-content: center;

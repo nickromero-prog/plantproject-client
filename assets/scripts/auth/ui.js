@@ -23,8 +23,11 @@ const signInSuccess = function (response) { // response is the response from the
   $('#sign-in-email').text('')
   $('#sign-in-password').text('')
   $('#sign-in-form').trigger('reset')
+  $('#sign-up-form').trigger('reset')
   $('#create-plant-form').show()
   $('#get-plants-form').show()
+  $('#create-pot-form').show()
+  $('#get-pots-form').show()
 }
 
 const signInFailure = function () {
@@ -51,12 +54,32 @@ const signOutSuccess = function (response) {
   $('#change-password-form').hide()
   $('#create-plant-form').hide()
   $('#get-plants-form').hide()
+  $('#create-pot-form').hide()
+  $('#get-pots-form').hide()
   $('#update-plant-form').hide()
   $('#delete-plant-form').hide()
+  $('#update-pot-form').hide()
+  $('#delete-pot-form').hide()
+  $('#sign-up-form').trigger('reset')
+  $('#sign-in-form').trigger('reset')
+  $('#change-password-form').trigger('reset')
+  $('#create-plant-form').trigger('reset')
+  $('#update-plant-form').trigger('reset')
+  $('#delete-plant-form').trigger('reset')
+  $('#create-pot-form').trigger('reset')
+  $('#delete-pot-form').trigger('reset')
+  $('#update-pot-form').trigger('reset')
 }
 
 const signOutFailure = function () {
   $('#message').text('Woops we could not sign you out')
+  $('#sign-up-form').trigger('reset')
+  $('#sign-in-form').trigger('reset')
+  $('#change-password-form').trigger('reset')
+  $('#create-plant-form').trigger('reset')
+  $('#create-pot-form').trigger('reset')
+  $('#delete-pot-form').trigger('reset')
+  $('#update-pot-form').trigger('reset')
 }
 
 module.exports = {
