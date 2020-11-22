@@ -46,7 +46,7 @@ allowing the user to change the password.
 As a user I want to be able to create a plant and store the information
 so I don't have to try and remember it.
 
-Next thing I wanted to set up was a way to create a plant so I created a form
+Next thing I wanted to do was set up a way to create a plant so I created a form
 that takes three basic inputs from the user and stores the information
 in the API for the user to retrieve later on.
 
@@ -66,6 +66,30 @@ that they have no need for anymore and can delete that plant from their account.
 As a user, I want to be able to change the plants I have logged if I find out
 that a certain plant needs different amounts of light or water. Or if I want to
 start calling the plant by the nickname I have given it.
+
+
+As a user I want to be able to create a pot and store the information about it
+so I don't have to try and remember it.
+
+Next thing I wanted to do was set up a way to create a pot so I created a form
+that takes two basic inputs from the user and stores the information
+in the API for the user to retrieve later on.
+
+As a user I want to be able to see the pots I have created so I can see how
+to design my pots with my plants.
+
+I created a button that allows the user to click and access all of the pots they
+have stored on their account. It will appear like a paragraph tag in html every
+time they click the button.
+
+As a user, I want to be able to delete a pot in case one breaks and I don't need
+to keep track of it anymore.
+
+I created an input field where the user can attach the id of the specific pot
+that they have no need for anymore and can delete that pot from their account.
+
+As a user, I want to be able to change the pots I have logged if I find out
+that a certain pot has been painted a different color or somehow changed in size
 
 
 Unsolved Problems:
