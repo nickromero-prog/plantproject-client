@@ -17,6 +17,8 @@ const getPlantsSuccess = function (res) {
   $('#message').text('Garden Shed: Plants')
   $('#delete-plant-form').show()
   $('#update-plant-form').show()
+  $('#delete-pot-form').hide()
+  $('#update-pot-form').hide()
 
   plants.forEach(function (currentPlant) {
     const plantsHTML = (`

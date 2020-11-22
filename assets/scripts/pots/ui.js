@@ -15,6 +15,8 @@ const createPotFailure = function (res) {
 const getPotsSuccess = function (res) {
   const pots = res.pots
   $('#message').text('Garden Shed: Pots')
+  $('#update-plant-form').hide()
+  $('#delete-plant-form').hide()
   $('#delete-pot-form').show()
   $('#update-pot-form').show()
   pots.forEach(function (currentPot) {
