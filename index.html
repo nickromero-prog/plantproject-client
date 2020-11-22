@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Garden Shed</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+      <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@366&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+      <h1>Garden Shed</h1>
+<div id='signinandup'>
+      <form class="form" id='sign-up-form'>
+        <fieldset>
+          <legend>Sign Up</legend>
+
+            <label for="sign-up-email">Email</label>
+              <input id="sign-up-email" type="email" name="credentials[email]">
+
+              <label for="sign-up-password">Password</label>
+                <input id="sign-up-password" type="password" name="credentials[password]">
+
+                <label for="sign-up-password_confirmation">Password Confirmation</label>
+                  <input id="sign-up-password_confirmation" type="password" name="credentials[password_confirmation]">
+
+                    <input id="signupbutton" type="submit" value="Sign Up">
+
+        </fieldset>
+      </form>
+
+
+      <form class="form" id='sign-in-form'>
+
+        <fieldset>
+          <legend>Sign In</legend>
+
+            <label for="sign-in-email">Email</label>
+              <input id="sign-in-email" type="email" name="credentials[email]">
+
+              <label for="sign-in-password">Password</label>
+                <input id="sign-in-password" type="password" name="credentials[password]">
+
+                    <input id="signinbutton" type="submit" value="Sign In">
+
+        </fieldset>
+      </form>
+
+</div>
+<div id="pformandsignout">
+      <form class="form" id="change-password-form">
+
+          <fieldset>
+            <legend>Change Password</legend>
+
+              <label>Old Password</label>
+                <input name="passwords[old]" type="password">
+
+                  <label>New Password</label>
+                    <input name="passwords[new]" type="password">
+
+                      <input type="submit" id="changepasswordbutton" value="Change Password">
+        </fieldset>
+      </form>
+
+      <form class="form" id="sign-out-form">
+          <fieldset>
+            <legend>Sign Out</legend>
+              <input type="submit" id="signoutbutton" value="Sign Out">
+          </fieldset>
+      </form>
+
+</div>
+<div id="createandgetplants">
+      <form class="form" id='create-plant-form'>
+        <fieldset>
+          <legend>Create a Plant</legend>
+
+            <label for="create-plant-name">Name</label>
+              <input id="create-plant-name" type="text" name="plant[name]">
+
+              <label for="create-plant-light">Light</label>
+                <input id="create-plant-light" type="text" name="plant[light]">
+
+                <label for="create-plant-water">Water</label>
+                  <input id="create-plant-water" type="text" name="plant[water]">
+
+                    <input id="createplantbutton" type="submit" value="Create Plant">
+
+        </fieldset>
+
+      </form>
+      <form class="form" id='get-plants-form'>
+        <fieldset>
+          <legend>See Your Plants</legend>
+            <input id="getplantsbutton" type="submit" value="See My Plants">
+        </fieldset>
+      </form>
+</div>
+
+<div id="changeanddeleteplant">
+
+      <form class="form" id='delete-plant-form'>
+        <fieldset>
+          <legend>Delete a Plant</legend>
+              <label for="plant-id">Plant ID</label>
+                <input id="plant-id" type="text" name="ID">
+
+                    <input id="deleteplantbutton" type="submit" value="Delete">
+        </fieldset>
+      </form>
+
+      <form class="form" id="update-plant-form">
+
+          <fieldset>
+            <legend>Alter Plant</legend>
+
+            <label for="update-plant-id">Plant ID</label>
+              <input id="update-plant-id" type="text" name="ID">
+
+              <label for="name-update">New Plant Name</label>
+                <input id="name-update" name="plant[name]" type="text">
+
+                  <label for="light-update">New Light</label>
+                    <input id="light-update" name="plant[light]" type="text">
+
+                    <label for="water-update">New Water</label>
+                      <input id="water-update" name="plant[water]" type="text">
+
+                      <input type="submit" id="updateplantbutton" value="Update Plant">
+        </fieldset>
+      </form>
+</div>
+<div id='createandgetpots'>
+<form class="form" id='create-pot-form'>
+  <fieldset>
+    <legend>Create a Pot</legend>
+
+      <label for="create-pot-color">Color</label>
+        <input id="create-pot-color" type="text" name="pot[color]">
+
+        <label for="create-pot-size">Size</label>
+          <input id="create-pot-size" type="text" name="pot[size]">
+
+              <input id="createpotbutton" type="submit" value="Create Pot">
+  </fieldset>
+</form>
+
+<form class="form" id='get-pots-form'>
+  <fieldset>
+    <legend>See Your Pots</legend>
+      <input id="getpotsbutton" type="submit" value="See My Pots">
+  </fieldset>
+</form>
+</div>
+<div id='deleteandupdatepots'>
+<form class="form" id='delete-pot-form'>
+  <fieldset>
+    <legend>Delete a Pot</legend>
+        <label for="plant-id">Pot ID</label>
+          <input id="pot-id" type="text" name="ID">
+              <input id="deletepotbutton" type="submit" value="Delete Pot">
+  </fieldset>
+</form>
+
+<form class="form" id="update-pot-form">
+
+    <fieldset>
+      <legend>Alter Pot</legend>
+
+      <label for="update-pot-id">Plant ID</label>
+        <input id="update-pot-id" type="text" name="ID">
+
+        <label for="color-update">New Pot Color</label>
+          <input id="color-update" name="pot[color]" type="text">
+
+            <label for="size-update">New Size</label>
+              <input id="size-update" name="pot[size]" type="text">
+
+                <input type="submit" id="updatepotbutton" value="Update Pot">
+  </fieldset>
+</form>
+</div>
+
+        <p id="message"></p>
+
+    </body>
+</html>
