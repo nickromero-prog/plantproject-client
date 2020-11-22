@@ -14,7 +14,6 @@ const onSignUp = function (event) {
 }
 
 const onSignIn = function (event) {
-  console.log(event)
   event.preventDefault() // event=submit, so preventDefault the submit action
   const form = event.target
   const data = getFormFields(form)// <---getFormFields(event.target) aquiring data to build object
